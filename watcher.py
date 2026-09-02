@@ -183,6 +183,17 @@ def relevant_lines(text: str) -> list[str]:
     return sorted(set(result))
 
 
+def alertable_diff_lines(diff: Iterable[str], had_previous_snapshot: bool) -> list[str]:
+    """Ignore the artificial full-page diff created by a page's first baseline."""
+    if not had_previous_snapshot:
+        return []
+    return [
+        line[:500]
+        for line in diff
+        if KEYWORD_RE.search(line)
+    ]
+
+
 def extract_markers(text: str, headers: dict[str, str]) -> tuple[set[int], set[int], set[str]]:
     combined = text + "\n" + "\n".join(f"{k}: {v}" for k, v in headers.items())
     cards = {int(value) for value in CARD_RE.findall(combined) if 1 <= int(value) <= 20}
@@ -319,7 +330,7 @@ def main() -> int:
             old_snapshot = ROOT / old.get("snapshot", "") if old.get("snapshot") else None
             old_text = old_snapshot.read_text(encoding="utf-8") if old_snapshot and old_snapshot.exists() else None
             diff = archive_page(old_text, page, old.get("all_headers", {}), now)
-            relevant_diff_lines.extend(line[:500] for line in diff if KEYWORD_RE.search(line))
+            relevant_diff_lines.extend(alertable_diff_lines(diff, old_text is not None))
             snapshot_path = SNAPSHOT_FILE if url == urljoin(BASE_URL, "/") else SNAPSHOTS_DIR / safe_page_name(url)
             write_text(snapshot_path, page.text)
             state["pages"][url] = {

@@ -52,6 +52,11 @@ class WatcherTests(unittest.TestCase):
         self.assertEqual(stable["etag"], "abc")
         self.assertEqual(stable["x-signal-09-of-16"], "payload")
 
+    def test_new_page_baseline_does_not_create_source_alerts(self):
+        diff = ["+<!-- [SIGNAL 08/16] -->", "+[PRIORITY 3/3]"]
+        self.assertEqual(watcher.alertable_diff_lines(diff, False), [])
+        self.assertEqual(watcher.alertable_diff_lines(diff, True), diff)
+
 
 if __name__ == "__main__":
     unittest.main()
