@@ -4,7 +4,7 @@ Automatischer GitHub-Actions-Watcher für das **MECCHA ROGUE / Liberation Sequen
 
 ## Was überwacht wird
 
-- Hauptseite, `covenant.html` und automatisch entdeckte interne HTML-Seiten
+- Hauptseite, `covenant.html`, `register.html`, `submit-art.html` und automatisch entdeckte interne HTML-Seiten
 - kompletter HTML-Quelltext und SHA-256
 - stabile HTTP-Response-Header (inklusive versteckter Signal-Header)
 - `CARD xx/20`, `SIGNAL`, `PRIORITY`, `A.R.G.U.S.`, `SEVENTEENTH`

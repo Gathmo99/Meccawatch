@@ -4,6 +4,12 @@ import watcher
 
 
 class WatcherTests(unittest.TestCase):
+    def test_required_pages_include_known_arg_routes(self):
+        self.assertEqual(
+            set(watcher.REQUIRED_PATHS),
+            {"/", "/covenant.html", "/register.html", "/submit-art.html"},
+        )
+
     def test_extracts_markers_from_html_and_headers(self):
         cards, signals, priorities = watcher.extract_markers(
             "<!-- [CARD 02/20] [SIGNAL 17/16] [PRIORITY 2/3] -->",

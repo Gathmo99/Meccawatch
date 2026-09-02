@@ -33,6 +33,7 @@ TIMEOUT = (15, 60)
 MAX_PAGES = int(os.getenv("MECCHA_MAX_PAGES", "25"))
 MAX_MEDIA_BYTES = int(os.getenv("MECCHA_MAX_MEDIA_BYTES", str(100 * 1024 * 1024)))
 USER_AGENT = "ARGUS-MECCHA-Watcher/1.0 (+GitHub Actions)"
+REQUIRED_PATHS = ("/", "/covenant.html", "/register.html", "/submit-art.html")
 
 MEDIA_EXTENSIONS = {
     ".wav", ".mp4", ".webm", ".mp3", ".jpg", ".jpeg", ".png",
@@ -278,7 +279,7 @@ def main() -> int:
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT, "Cache-Control": "no-cache"})
 
-    seed_urls = {urljoin(BASE_URL, "/"), urljoin(BASE_URL, "/covenant.html")}
+    seed_urls = {urljoin(BASE_URL, path) for path in REQUIRED_PATHS}
     seed_urls.update(state["pages"].keys())
     queue = sorted(seed_urls)
     visited: set[str] = set()
