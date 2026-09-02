@@ -6,7 +6,7 @@
       "source_page": "https://2390h938fh92f8h2382h92gf928g98hyf92h9.netlify.app/"
     }
   },
-  "last_change_at": "2026-09-02T21:26:11+00:00",
+  "last_change_at": "2026-09-02T21:33:25+00:00",
   "media": {
     "https://2390h938fh92f8h2382h92gf928g98hyf92h9.netlify.app/media/3e07d2.jpg": {
       "card": 1,
@@ -131,6 +131,56 @@
       "sha256": "9d28dba469c169a4e841ba6c511470178b365c42379c1460b8cd528fc7251056",
       "snapshot": "snapshot.html"
     },
+    "https://2390h938fh92f8h2382h92gf928g98hyf92h9.netlify.app/covenant": {
+      "all_headers": {
+        "Accept-Ranges": "bytes",
+        "Age": "0",
+        "Cache-Control": "public,max-age=0,must-revalidate",
+        "Cache-Status": "\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Wed, 02 Sep 2026 21:33:26 GMT",
+        "Etag": "\"7c7f42a335893a2a29c4da52f9594191-ssl-df\"",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Server": "Netlify",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Nf-Request-Id": "01M1J0N1QTVCV6HCD81TRT5PFN",
+        "X-Signal-09-Of-16": "VHdvIG9jY3VwYW50cyBjYW4gc2hhcmUgYW4gYWRkcmVzcyB3aXRob3V0IHNoYXJpbmcgYSB3b3JsZC4="
+      },
+      "changed_at": "2026-09-02T21:33:25+00:00",
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "public,max-age=0,must-revalidate",
+        "content-encoding": "gzip",
+        "content-type": "text/html; charset=UTF-8",
+        "etag": "\"7c7f42a335893a2a29c4da52f9594191-ssl-df\"",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "Netlify",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "vary": "Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "x-signal-09-of-16": "VHdvIG9jY3VwYW50cyBjYW4gc2hhcmUgYW4gYWRkcmVzcyB3aXRob3V0IHNoYXJpbmcgYSB3b3JsZC4="
+      },
+      "relevant_lines": [
+        "<!-- [SIGNAL 12/16] [VIGENERE. KEY: THE PROJECT] [Vvlmi tntxkqptrxvqr dsnee frhsts alvme espglrk anu vgebmiiq.] 𓉭𓅠𓇂𓋃𓎀𓍜𓆰 -->",
+        "<!-- 𓌴𓏖𓋦𓍚 [SIGNAL 14/16] [XOR. KEY: THE DAY IT BEGAN AND ENDED, FOUR DIGITS] [64 5B 54 4D 10 5E 50 50 55 13 45 5C 55 13 5E 40 58 56 43 47 10 44 50 40 53 5B 1F] 𓉗𓌾 -->",
+        "<!-- 𓐟𓇛𓐐 [PRIORITY 2/3] [SIXTY FOUR] [IG5vdCBwYWludC4gVGhhdCBpcyBob3c=] 𓈌𓅁𓈠 -->",
+        "<!--[SIGNAL 07/16] [VIGENERE. KEY: WHO WATCHED WITH ONE HUNDRED EYES] [We ysum mfhteirmmgcs scg rsm xn rjtkc jdoz.]-->",
+        "[A.R.G.U.S. SIGNAL RELAY]",
+        "[SIGNAL 02/16] [THE ALPHABET, MIRRORED] [Gsv yfrowrmt dzh hvxfivw yvuliv gsv uznrorvh dviv rmulinvw.]",
+        "[SIGNAL 08/16] [PART 2 OF 3] [IHBsYW4gZXh0ZW5kcyBiZXlvbg==]",
+        "[THE SIGNALS CONTINUE HERE. PRIORITY 2/3 IS ON THIS PAGE]",
+        "allow the signal",
+        "{\"Accept-Ranges\": \"bytes\", \"Age\": \"0\", \"Cache-Control\": \"public,max-age=0,must-revalidate\", \"Cache-Status\": \"\\\"Netlify Edge\\\"; fwd=miss; fwd-status=200; stored\", \"Content-Encoding\": \"gzip\", \"Content-Type\": \"text/html; charset=UTF-8\", \"Date\": \"Wed, 02 Sep 2026 21:33:26 GMT\", \"Etag\": \"\\\"7c7f42a335893a2a29c4da52f9594191-ssl-df\\\"\", \"Referrer-Policy\": \"strict-origin-when-cross-origin\", \"Server\": \"Netlify\", \"Strict-Transport-Security\": \"max-age=31536000; includeSubDomains; preload\", \"Vary\": \"Accept-Encoding\", \"X-Content-Type-Options\": \"nosniff\", \"X-Frame-Options\": \"SAMEORIGIN\", \"X-Nf-Request-Id\": \"01M1J0N1QTVCV6HCD81TRT5PFN\", \"X-Signal-09-Of-16\": \"VHdvIG9jY3VwYW50cyBjYW4gc2hhcmUgYW4gYWRkcmVzcyB3aXRob3V0IHNoYXJpbmcgYSB3b3JsZC4=\", \"Transfer-Encoding\": \"chunked\"}"
+      ],
+      "sha256": "c4d5b54966e9181776876125c845a45aa2bd707a93f8ccb1b57a3c81689818f8",
+      "snapshot": "snapshots/covenant.html"
+    },
     "https://2390h938fh92f8h2382h92gf928g98hyf92h9.netlify.app/covenant.html": {
       "all_headers": {
         "Accept-Ranges": "bytes",
@@ -180,6 +230,91 @@
       ],
       "sha256": "c4d5b54966e9181776876125c845a45aa2bd707a93f8ccb1b57a3c81689818f8",
       "snapshot": "snapshots/covenant.html.html"
+    },
+    "https://2390h938fh92f8h2382h92gf928g98hyf92h9.netlify.app/register.html": {
+      "all_headers": {
+        "Accept-Ranges": "bytes",
+        "Age": "0",
+        "Cache-Control": "public,max-age=0,must-revalidate",
+        "Cache-Status": "\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Wed, 02 Sep 2026 21:33:26 GMT",
+        "Etag": "\"a70cb898d6028e6b5ff0a18f037c6ed0-ssl-df\"",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Server": "Netlify",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Nf-Request-Id": "01M1J0N1KST2J79DGKHGTE06F6",
+        "X-Signal-09-Of-16": "VHdvIG9jY3VwYW50cyBjYW4gc2hhcmUgYW4gYWRkcmVzcyB3aXRob3V0IHNoYXJpbmcgYSB3b3JsZC4="
+      },
+      "changed_at": "2026-09-02T21:33:25+00:00",
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "public,max-age=0,must-revalidate",
+        "content-encoding": "gzip",
+        "content-type": "text/html; charset=UTF-8",
+        "etag": "\"a70cb898d6028e6b5ff0a18f037c6ed0-ssl-df\"",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "Netlify",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "vary": "Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "x-signal-09-of-16": "VHdvIG9jY3VwYW50cyBjYW4gc2hhcmUgYW4gYWRkcmVzcyB3aXRob3V0IHNoYXJpbmcgYSB3b3JsZC4="
+      },
+      "relevant_lines": [
+        "<!-- [A.R.G.U.S. SIGNAL RELAY] [THE REGISTRY HOLDS TWO ENDINGS] -->",
+        "<!-- [PRIORITY 3/3] [SIXTY FOUR] [IHlvdSBzdGFydCB0aGUgZGVzY2VudC4=] -->",
+        "<!-- [SIGNAL 08/16] [PART 3 OF 3] [ZCB0aHJlZSBkaW1lbnNpb25zLg==] -->",
+        "{\"Accept-Ranges\": \"bytes\", \"Age\": \"0\", \"Cache-Control\": \"public,max-age=0,must-revalidate\", \"Cache-Status\": \"\\\"Netlify Edge\\\"; fwd=miss; fwd-status=200; stored\", \"Content-Encoding\": \"gzip\", \"Content-Type\": \"text/html; charset=UTF-8\", \"Date\": \"Wed, 02 Sep 2026 21:33:26 GMT\", \"Etag\": \"\\\"a70cb898d6028e6b5ff0a18f037c6ed0-ssl-df\\\"\", \"Referrer-Policy\": \"strict-origin-when-cross-origin\", \"Server\": \"Netlify\", \"Strict-Transport-Security\": \"max-age=31536000; includeSubDomains; preload\", \"Vary\": \"Accept-Encoding\", \"X-Content-Type-Options\": \"nosniff\", \"X-Frame-Options\": \"SAMEORIGIN\", \"X-Nf-Request-Id\": \"01M1J0N1KST2J79DGKHGTE06F6\", \"X-Signal-09-Of-16\": \"VHdvIG9jY3VwYW50cyBjYW4gc2hhcmUgYW4gYWRkcmVzcyB3aXRob3V0IHNoYXJpbmcgYSB3b3JsZC4=\", \"Transfer-Encoding\": \"chunked\"}"
+      ],
+      "sha256": "f8a8d44d55223264872804604aa4d62bb29a043e8bc53e920baa5303e461a33f",
+      "snapshot": "snapshots/register.html.html"
+    },
+    "https://2390h938fh92f8h2382h92gf928g98hyf92h9.netlify.app/submit-art.html": {
+      "all_headers": {
+        "Accept-Ranges": "bytes",
+        "Age": "0",
+        "Cache-Control": "public,max-age=0,must-revalidate",
+        "Cache-Status": "\"Netlify Edge\"; fwd=miss; fwd-status=200; stored",
+        "Content-Encoding": "gzip",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Wed, 02 Sep 2026 21:33:26 GMT",
+        "Etag": "\"bce616c06f8999105b2720dfd22854a1-ssl-df\"",
+        "Referrer-Policy": "strict-origin-when-cross-origin",
+        "Server": "Netlify",
+        "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+        "Transfer-Encoding": "chunked",
+        "Vary": "Accept-Encoding",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-Nf-Request-Id": "01M1J0N1NP8BCT66PQFPXR66TS",
+        "X-Signal-09-Of-16": "VHdvIG9jY3VwYW50cyBjYW4gc2hhcmUgYW4gYWRkcmVzcyB3aXRob3V0IHNoYXJpbmcgYSB3b3JsZC4="
+      },
+      "changed_at": "2026-09-02T21:33:25+00:00",
+      "headers": {
+        "accept-ranges": "bytes",
+        "cache-control": "public,max-age=0,must-revalidate",
+        "content-encoding": "gzip",
+        "content-type": "text/html; charset=UTF-8",
+        "etag": "\"bce616c06f8999105b2720dfd22854a1-ssl-df\"",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "server": "Netlify",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "vary": "Accept-Encoding",
+        "x-content-type-options": "nosniff",
+        "x-frame-options": "SAMEORIGIN",
+        "x-signal-09-of-16": "VHdvIG9jY3VwYW50cyBjYW4gc2hhcmUgYW4gYWRkcmVzcyB3aXRob3V0IHNoYXJpbmcgYSB3b3JsZC4="
+      },
+      "relevant_lines": [
+        "{\"Accept-Ranges\": \"bytes\", \"Age\": \"0\", \"Cache-Control\": \"public,max-age=0,must-revalidate\", \"Cache-Status\": \"\\\"Netlify Edge\\\"; fwd=miss; fwd-status=200; stored\", \"Content-Encoding\": \"gzip\", \"Content-Type\": \"text/html; charset=UTF-8\", \"Date\": \"Wed, 02 Sep 2026 21:33:26 GMT\", \"Etag\": \"\\\"bce616c06f8999105b2720dfd22854a1-ssl-df\\\"\", \"Referrer-Policy\": \"strict-origin-when-cross-origin\", \"Server\": \"Netlify\", \"Strict-Transport-Security\": \"max-age=31536000; includeSubDomains; preload\", \"Vary\": \"Accept-Encoding\", \"X-Content-Type-Options\": \"nosniff\", \"X-Frame-Options\": \"SAMEORIGIN\", \"X-Nf-Request-Id\": \"01M1J0N1NP8BCT66PQFPXR66TS\", \"X-Signal-09-Of-16\": \"VHdvIG9jY3VwYW50cyBjYW4gc2hhcmUgYW4gYWRkcmVzcyB3aXRob3V0IHNoYXJpbmcgYSB3b3JsZC4=\", \"Transfer-Encoding\": \"chunked\"}"
+      ],
+      "sha256": "c9fa5d48927e80cca952c92e841e0ec67e91631c929dc225ecebfbd160df47f7",
+      "snapshot": "snapshots/submit-art.html.html"
     }
   },
   "priorities": {

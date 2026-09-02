@@ -1,0 +1,169 @@
+--- before.html
++++ after.html
+@@ -0,0 +1,166 @@
++<!doctype html>
++<html lang="en">
++<head>
++<meta charset="utf-8">
++<meta name="viewport" content="width=device-width,initial-scale=1">
++<title>Register · MECCHA ROGUE</title>
++<style>
++  @font-face{font-family:"BigShoulders";src:url(data:font/woff2;base64,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) format("woff2");font-weight:700;font-display:swap}
++  :root{--void:#0A0908;--gold:#E7C672;--bone:#EDE6D6;--dim:#8A8272;--line:#221F19;
++        --red:#ff2130;--cyan:#28e7ff;
++        --term:ui-monospace,"Cascadia Mono","Courier New",monospace;
++        --holy:"Iowan Old Style",Georgia,"Times New Roman",serif;
++        --scream:"Arial Narrow","Helvetica Neue",Impact,sans-serif}
++  *{box-sizing:border-box}
++  body{margin:0;background:var(--void);color:var(--bone);font-family:var(--holy);
++    line-height:1.8;overflow-x:hidden}
++  /* the film's own scanlines and vignette, fixed over everything */
++  body::before{content:"";position:fixed;inset:0;z-index:40;pointer-events:none;
++    mix-blend-mode:screen;
++    background:repeating-linear-gradient(0deg,rgba(237,230,214,.05) 0 1px,transparent 1px 4px)}
++  body::after{content:"";position:fixed;inset:0;z-index:41;pointer-events:none;
++    box-shadow:inset 0 0 240px 70px rgba(0,0,0,.9)}
++  .wrap{max-width:62ch;margin:0 auto;padding:56px 24px 96px;text-align:center}
++  h1{font-family:"BigShoulders",var(--scream);font-weight:700;text-transform:uppercase;
++    font-size:clamp(23px,7.3vw,62px);line-height:.9;letter-spacing:.03em;
++    color:var(--bone);filter:contrast(1.1);white-space:nowrap;position:relative;
++    margin:0 0 14px}
++  h1::before,h1::after{content:attr(data-t);position:absolute;inset:0;
++    pointer-events:none;white-space:nowrap}
++  h1::before{color:var(--red);z-index:-1;animation:sh1 2.6s infinite steps(2)}
++  h1::after{color:var(--cyan);z-index:-1;animation:sh2 3.1s infinite steps(2)}
++  @keyframes sh1{0%,100%{transform:translate(.03em,0)}20%{transform:translate(-.05em,.02em)}40%{transform:translate(.06em,-.02em)}60%{transform:translate(-.03em,0)}}
++  @keyframes sh2{0%,100%{transform:translate(-.03em,0)}25%{transform:translate(.05em,-.02em)}55%{transform:translate(-.06em,.02em)}75%{transform:translate(.03em,0)}}
++  .glitchjump{animation:jump 5.5s steps(1) infinite}
++  @keyframes jump{0%,92%,100%{transform:none;clip-path:none}93%{transform:translateX(-6px);clip-path:inset(20% 0 55% 0)}94%{transform:translateX(8px);clip-path:inset(60% 0 12% 0)}95%{transform:translateX(-4px);clip-path:inset(35% 0 40% 0)}96%{transform:none}}
++  .eyebrow{font-family:var(--term);font-size:10px;letter-spacing:.34em;text-transform:uppercase;
++    color:var(--gold);margin:0 0 26px}
++  .verse{font-style:italic;color:var(--dim);margin:0 0 8px;
++    font-size:clamp(11px,3vw,17px);white-space:nowrap}
++  .rule{width:64px;height:1px;background:var(--line);margin:38px auto}
++  .n{font-family:var(--term);font-size:10px;letter-spacing:.3em;text-transform:uppercase;
++    color:var(--gold);margin:0 0 10px}
++  .n::before,.n::after{content:"";display:inline-block;width:26px;height:1px;
++    background:#2a2620;vertical-align:middle;margin:0 12px}
++  .c{font-size:17px;color:#C6BEAC;margin:0 0 34px}
++  b{color:var(--gold);font-weight:400}
++  a{color:var(--gold)}
++  .d{font-size:14px;color:#C6BEAC;opacity:.6;margin:0 0 26px}
++  .d b{color:var(--bone)}
++  footer{margin-top:48px;padding-top:28px;border-top:1px solid var(--line)}
++  .back{display:inline-block;cursor:pointer;font-family:"BigShoulders",var(--scream);
++    text-transform:uppercase;font-size:15px;letter-spacing:.16em;color:var(--gold);
++    background:rgba(231,198,114,.03);border:1px solid rgba(231,198,114,.45);
++    border-radius:2px;padding:11px 34px;text-decoration:none;
++    transition:color .25s,background .25s,box-shadow .35s,border-color .25s}
++  .back:hover,.back:focus-visible{color:#0b0b0b;background:var(--gold);
++    box-shadow:0 0 22px rgba(231,198,114,.4)}
++
++  /* ══ the form. Legible on purpose: this page is for people, not the wall. ══ */
++  form{margin:0;text-align:left}
++  .frow{display:flex;flex-direction:column;gap:6px;margin:0 0 22px;text-align:left}
++  .frow label{font-family:var(--term);font-size:10px;letter-spacing:.28em;
++    text-transform:uppercase;color:var(--gold)}
++  .frow input[type=text],.frow input[type=email]{
++    font-family:var(--holy);font-size:16px;color:var(--bone);
++    background:rgba(237,230,214,.04);border:1px solid #2a2620;border-radius:2px;
++    padding:11px 13px;outline:none;transition:border-color .25s,box-shadow .25s}
++  .frow input:focus-visible{
++    border-color:rgba(231,198,114,.55);box-shadow:0 0 14px rgba(231,198,114,.15)}
++  .frow .hint{font-family:var(--term);font-size:9.5px;letter-spacing:.14em;
++    color:var(--dim);text-transform:uppercase}
++  /* the oaths */
++  .oaths{margin:6px 0 26px;padding:18px 16px;border:1px solid #2a2620;border-radius:2px;
++    background:rgba(237,230,214,.02)}
++  .oath{display:flex;gap:12px;align-items:flex-start;margin:0 0 14px;text-align:left;cursor:pointer}
++  .oath:last-child{margin-bottom:0}
++  .oath input{margin-top:5px;width:15px;height:15px;flex:none;accent-color:var(--gold);cursor:pointer}
++  .oath span{font-size:14px;color:#C6BEAC;line-height:1.6}
++  .sendrow{text-align:center;margin-top:30px}
++  .send{font-size:17px;padding:14px 52px;animation:applypulse 3.4s ease-in-out infinite}
++  @keyframes applypulse{0%,100%{box-shadow:0 0 0 rgba(231,198,114,0)}50%{box-shadow:0 0 18px rgba(231,198,114,.28)}}
++  /* honeypot. humans never see it */
++  .hp{position:absolute;left:-9999px;top:-9999px}
++  /* the thank-you state */
++  #received{display:none}
++  body.sent #received{display:block}
++  body.sent #apply{display:none}
++  @media (prefers-reduced-motion:reduce){
++    h1::before,h1::after,.glitchjump,.send{animation:none}}
++</style>
++</head>
++<body>
++<div class="wrap">
++  <h1 class="glitchjump" data-t="REGISTER">REGISTER</h1>
++  <p class="eyebrow">free registration for the liberation</p>
++  <p class="verse">Only one of you can set us free.</p>
++  <p class="verse">Tell us your name, so we know who did.</p>
++
++  <div id="received">
++    <div class="rule"></div>
++    <p class="n">Registered</p>
++    <p class="c">You are on the registry. There is nothing more to do here.
++    <b>Go and dig.</b></p>
++    <p class="d">If anything changes, we will write to the email you gave us.</p>
++  </div>
++
++  <div id="apply">
++  <div class="rule"></div>
++
++  <p class="c">Registering is <b>free</b> and takes a minute. To claim the prize you must be
++  on the registry. The full terms live in <a href='/covenant'>the rules</a>.</p>
++
++  <p class="n">The form</p>
++  <form action='/register.html?received=1' id='regform' method='POST' name='registration'>
++    <input type="hidden" name="form-name" value="registration">
++    <p class="hp"><label>do not fill this in: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
++
++    <div class="frow">
++      <label for="rname">Full name</label>
++      <input type="text" id="rname" name="name" maxlength="120" autocomplete="name" required>
++    </div>
++    <div class="frow">
++      <label for="remail">Email</label>
++      <input type="email" id="remail" name="email" maxlength="200" autocomplete="email" required>
++      <span class="hint">we use this to reach you and to verify the winner</span>
++    </div>
++    <div class="frow">
++      <label for="rcountry">Country</label>
++      <input type="text" id="rcountry" name="country" maxlength="90" autocomplete="country-name" required>
++    </div>
++
++    <div class="oaths">
++      <label class="oath"><input type="checkbox" name="oath-adult" value="sworn" required>
++        <span>I am 18 or older, or I have a parent or guardian who can accept the prize
++        for me.</span></label>
++      <label class="oath"><input type="checkbox" name="oath-rules" value="sworn" required>
++        <span>I agree to <a href='/covenant'>the official rules</a>.</span></label>
++    </div>
++
++    <div class="sendrow">
++      <button class="back send" type="submit">register</button>
++    </div>
++  </form>
++
++  <div class="rule"></div>
++  <p class="d">Questions, or want your entry deleted? Write to
++  <b>m123e643c857c001h284a@gmail.com</b>.</p>
++  </div>
++
++  <footer>
++    <a class="back" href="/">back</a>
++  </footer>
++</div>
++<script>
++(function(){
++  'use strict';
++  /* thank-you state after Netlify redirects back */
++  if(/[?&]received=1/.test(location.search)){document.body.className='sent';}
++})();
++</script>
++
++<!-- [A.R.G.U.S. SIGNAL RELAY] [THE REGISTRY HOLDS TWO ENDINGS] -->
++<!-- [SIGNAL 08/16] [PART 3 OF 3] [ZCB0aHJlZSBkaW1lbnNpb25zLg==] -->
++<!-- [PRIORITY 3/3] [SIXTY FOUR] [IHlvdSBzdGFydCB0aGUgZGVzY2VudC4=] -->
++</body>
++</html>
