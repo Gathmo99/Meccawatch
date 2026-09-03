@@ -389,12 +389,18 @@ def main() -> int:
             alert.extend(f"```diff\n{line}\n```" for line in relevant_diff_lines[:8])
         send_discord(alert)
 
-    if not initial_run and datetime.now(timezone.utc).minute < 5:
+    last_heartbeat = state.get("last_heartbeat_at")
+    heartbeat_due = last_heartbeat is None or (
+        datetime.now(timezone.utc) - datetime.fromisoformat(last_heartbeat)
+    ).total_seconds() >= 55 * 60
+    if not initial_run and heartbeat_due:
         send_discord([
             "✅ **A.R.G.U.S. STATUS**",
             f"\nWatcher aktiv – {now}",
             f"Seiten geprüft: {len(page_results)}",
         ])
+        state["last_heartbeat_at"] = now
+        write_json(STATE_FILE, state)
 
     if new_cards:
         commit_message = f"CARD {min(new_cards):02d}/20 detected"
