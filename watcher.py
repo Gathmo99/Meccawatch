@@ -392,7 +392,7 @@ def main() -> int:
     last_heartbeat = state.get("last_heartbeat_at")
     heartbeat_due = last_heartbeat is None or (
         datetime.now(timezone.utc) - datetime.fromisoformat(last_heartbeat)
-    ).total_seconds() >= 55 * 60
+    ).total_seconds() >= 25 * 60
     if not initial_run and heartbeat_due:
         send_discord([
             "✅ **A.R.G.U.S. STATUS**",
