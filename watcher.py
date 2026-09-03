@@ -289,6 +289,28 @@ def send_discord(lines: Iterable[str]) -> None:
     response.raise_for_status()
 
 
+def send_telegram(lines: Iterable[str]) -> None:
+    token = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
+    chat_id = os.getenv("TELEGRAM_CHAT_ID", "").strip()
+    if not token or not chat_id:
+        return
+    content = "\n".join(lines)
+    if len(content) > 4000:
+        content = content[:3980] + "\n… (gekürzt)"
+    response = requests.post(
+        f"https://api.telegram.org/bot{token}/sendMessage",
+        json={"chat_id": chat_id, "text": content},
+        timeout=TIMEOUT,
+    )
+    response.raise_for_status()
+
+
+def notify_all(lines: Iterable[str]) -> None:
+    lines = list(lines)
+    send_discord(lines)
+    send_telegram(lines)
+
+
 def main() -> int:
     now = utc_now()
     state = load_state()
@@ -393,14 +415,14 @@ def main() -> int:
         if relevant_diff_lines:
             alert.append("\n🔎 **RELEVANT SOURCE/HEADER CHANGE**")
             alert.extend(f"```diff\n{line}\n```" for line in relevant_diff_lines[:8])
-        send_discord(alert)
+        notify_all(alert)
 
     last_heartbeat = state.get("last_heartbeat_at")
     heartbeat_due = last_heartbeat is None or (
         datetime.now(timezone.utc) - datetime.fromisoformat(last_heartbeat)
     ).total_seconds() >= 25 * 60
     if not initial_run and heartbeat_due:
-        send_discord([
+        notify_all([
             "✅ **A.R.G.U.S. STATUS**",
             f"\nWatcher aktiv – {german_time(now)}",
             f"Seiten geprüft: {len(page_results)}",
