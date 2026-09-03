@@ -417,10 +417,11 @@ def main() -> int:
             alert.extend(f"```diff\n{line}\n```" for line in relevant_diff_lines[:8])
         notify_all(alert)
 
-    last_heartbeat = state.get("last_heartbeat_at")
-    heartbeat_due = last_heartbeat is None or (
-        datetime.now(timezone.utc) - datetime.fromisoformat(last_heartbeat)
-    ).total_seconds() >= 25 * 60
+    current_time = datetime.now(timezone.utc)
+    heartbeat_slot = current_time.strftime("%Y-%m-%dT%H:%M")
+    heartbeat_due = (
+        current_time.minute in (0, 30) and state.get("last_heartbeat_slot") != heartbeat_slot
+    )
     if not initial_run and heartbeat_due:
         notify_all([
             "✅ **A.R.G.U.S. STATUS**",
@@ -428,6 +429,7 @@ def main() -> int:
             f"Seiten geprüft: {len(page_results)}",
         ])
         state["last_heartbeat_at"] = now
+        state["last_heartbeat_slot"] = heartbeat_slot
         write_json(STATE_FILE, state)
 
     if new_cards:
