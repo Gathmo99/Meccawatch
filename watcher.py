@@ -15,6 +15,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 from typing import Iterable
 from urllib.parse import unquote, urljoin, urlparse
+from zoneinfo import ZoneInfo
 
 import requests
 
@@ -81,6 +82,11 @@ class PageResult:
 
 def utc_now() -> str:
     return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+
+
+def german_time(iso_utc: str) -> str:
+    dt = datetime.fromisoformat(iso_utc).astimezone(ZoneInfo("Europe/Berlin"))
+    return dt.strftime("%d.%m.%Y %H:%M Uhr")
 
 
 def timestamp_slug(now: str) -> str:
@@ -396,7 +402,7 @@ def main() -> int:
     if not initial_run and heartbeat_due:
         send_discord([
             "✅ **A.R.G.U.S. STATUS**",
-            f"\nWatcher aktiv – {now}",
+            f"\nWatcher aktiv – {german_time(now)}",
             f"Seiten geprüft: {len(page_results)}",
         ])
         state["last_heartbeat_at"] = now
