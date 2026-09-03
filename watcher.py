@@ -389,6 +389,13 @@ def main() -> int:
             alert.extend(f"```diff\n{line}\n```" for line in relevant_diff_lines[:8])
         send_discord(alert)
 
+    if not initial_run and datetime.now(timezone.utc).minute < 5:
+        send_discord([
+            "✅ **A.R.G.U.S. STATUS**",
+            f"\nWatcher aktiv – {now}",
+            f"Seiten geprüft: {len(page_results)}",
+        ])
+
     if new_cards:
         commit_message = f"CARD {min(new_cards):02d}/20 detected"
     elif any_change:
