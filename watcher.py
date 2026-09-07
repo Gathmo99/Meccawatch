@@ -420,7 +420,8 @@ def main() -> int:
     current_time = datetime.now(timezone.utc)
     heartbeat_slot = current_time.strftime("%Y-%m-%dT%H:%M")
     heartbeat_due = (
-        current_time.minute == 0 and state.get("last_heartbeat_slot") != heartbeat_slot
+        current_time.minute == 0 and current_time.hour % 8 == 0
+        and state.get("last_heartbeat_slot") != heartbeat_slot
     )
     if not initial_run and heartbeat_due:
         notify_all([
